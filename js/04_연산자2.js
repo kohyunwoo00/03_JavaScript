@@ -24,7 +24,7 @@ function check1(){
 
   console.log("num1 == num2 :", num1 == num2); // true
   console.log("num1 == num3 :", num1 == num3); // false
-  console.log("num1 == num3 :", num1 != num3); // true
+  console.log("num1 != num3 :", num1 != num3); // true
 
   // number, string 동등 비교
   console.log("num1 == str1 :", num1 == str1); // true
@@ -39,7 +39,7 @@ function check1(){
   //숫자 끼리 값 비교
   console.log("num1 === num2 :", num1 === num2); // true
   console.log("num1 === num3 :", num1 === num3); // false
-  console.log("num1 === num3 :", num1 !== num3); // true
+  console.log("num1 !== num3 :", num1 !== num3); // true
 
    // number, string 동일 비교
    console.log("num1 === str1 :", num1 === str1); // false
