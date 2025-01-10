@@ -1,0 +1,36 @@
+*{
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+ 
+}
+
+.inputWidth{
+  width: 100px;
+}
+
+.inputHeight{
+  width: 100px;
+}
+
+.fs{
+  width: 80px;
+}
+
+.inputColor{
+  width: 150px;
+}
+
+.bg{
+  width: 150px;
+}
+
+.text-input{
+  width: 300px;
+}
+
+#result{
+  width: 10px;
+  height: 10px;
+  border: 2px solid black;
+}
