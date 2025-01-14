@@ -1,27 +1,25 @@
-const rows = document.querySelectorAll(".row");
 const v1 = document.querySelector("#btn");
-const v2 = document.querySelector("#result");
-const apple  = document.querySelector("#inputApple");
-const banana = document.querySelector("#inputBanana");
-const melone = document.querySelector("#inputMelone");
 
 
 
 v1.addEventListener("click", ()=>{
-  const apple  = document.querySelector("#apple").checked;
-  const banana = document.querySelector("#banana").checked;
-  const melone = document.querySelector("#melone").checked;
-  
-  let appleNum = Number(inputApple.value);
-  let bansnaNum = Number(inputBanana.value);
-  let meloneNum = Number(inputMelone.value);
+  // count 클릭 시점에 체크된 .fruit만
+  const fruits =document.querySelectorAll(".fruit:checked");
+  let str ="";
+  let sum=0;
+  for(let fruit of fruits){
+    // 체크된 체크박스의 부모 요소를 찾은 후 부모 요소의 모든 자식 요소 중 2(span),3(input) 인덱스 요소 접근
+    const parent = fruit.parentElement;
+    const fruitName = parent.children[1].innerText; // 과일 이름 얻어오기
+    const price = parent.children[2].innerText; // 작성된 가격 얻어오기 (시작태그, 종료태그 있으면 innerText)
+    const cnt = parent.children[3].value; // 입력된 개수 얻어오기 (input이면 value)
 
-  let result = "";
-  
-
+    str +=`${fruitName} ${cnt}개`;
+    sum += Number(price) * Number(cnt); // 가격 * 개수
+  }
+  // 결과 출력
+  document.querySelector("#result").innerText = `${str} 총합 ${sum}원`;
 });
-
-
 
 
 
