@@ -1,0 +1,90 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  display: flex;
+}
+
+#container{
+  width: 600px;
+  margin: 0;
+  padding: 0;
+}
+
+.box { 
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.number{
+  width: 200px;
+  height: 80px;
+ flex-wrap: wrap;
+  display: flex;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;    /* 커서 손가락 */
+  user-select: none; /* 블럭 막기 */
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.btn-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.btn-container>button{
+  margin: 3px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  height: 30px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+#add{
+  color: green;
+  border: 2px solid green;
+}
+
+#cancel{
+  color: gray;
+  border : 2px solid gray;
+}
+
+.phoneList{
+  margin: 10px 0;
+ font-size: 20px;
+ font-weight: bold;
+ border-left: 1px solid gray;
+ display: flex;
+ flex-direction: column;
+
+}
+
+#display{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border-bottom: 1px solid gray;
+}
+
+li{
+  list-style: none;
+}
+
