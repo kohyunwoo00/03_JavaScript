@@ -1,0 +1,26 @@
+*{
+  box-sizing: border-box;
+  flex-basis: min-content;
+  width: 450px;
+  padding: 3px;
+  margin: 6px;
+}
+
+.container{
+  display: flex;
+  padding: 20px;
+}
+
+.input-group{
+  flex-direction: column;
+}
+
+#registerBtn{
+  width: 50px;
+  height: 40px;
+  border: none;
+  background-color: rgb(88, 204, 88);
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}

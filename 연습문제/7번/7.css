@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box;
+
+}
+
+#box{
+  width: 250px;
+  height: 450px;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.number{
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  margin: 8px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;  
+  text-align: center;
+  cursor: pointer;
+}
+
+.number-hidden {
+  display: none;
+}
+
+.hidden{
+  display: none;
+}
+
+.color{
+  background-color: violet;
+}
+
+
